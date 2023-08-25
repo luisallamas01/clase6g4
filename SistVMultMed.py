@@ -51,7 +51,7 @@ class Mascota:
     
 class sistemaV:
     def __init__(self):
-        self.__lista_mascotas = []
+        self.__lista_mascotas = {"Canino": [], "Felino": []
     
     def verificarExiste(self,historia):
         for m in self.__lista_mascotas:
@@ -61,7 +61,7 @@ class sistemaV:
         return False
         
     def verNumeroMascotas(self):
-        return len(self.__lista_mascotas) 
+        return len(self.__lista_mascotas) #sumar la cantidad de gatos y perros
     
     def ingresarMascota(self,mascota):
         self.__lista_mascotas.append(mascota) 
